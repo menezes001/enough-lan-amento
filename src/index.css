@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-blood-red: #8B1A1A;
+    --color-cream: #FBF6E5;
+    --color-black: #1A1A1A;
+    --color-gold: #CA9766;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #FBF6E5;
+    color: #1A1A1A;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  body {
+    background-color: #FBF6E5;
+    color: #1A1A1A;
+    overflow-x: hidden;
+  }
+}
+
+.font-editorial {
+  font-family: 'Lora', Georgia, serif;
+  font-style: italic;
+}
+
+.font-serif-clean {
+  font-family: 'Lora', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom subtle noise texture overlay for analog editorial feel */
+.bg-subtle-grain {
+  background-image: radial-gradient(rgba(139, 26, 26, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
