@@ -1,6 +1,6 @@
 {
   "name": "Remix ENOUGH — Coleção Genesis",
-  "description": "Landing page de lançamento da marca de semijoias ENOUGH e da Coleção Genesis com acesso exclusivo ao Grupo VIP.",
+  "description": "Landing page de lançamento da marca de semijoias ENOUGH e da Coleção Gênesis com acesso exclusivo ao Grupo VIP.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

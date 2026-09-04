@@ -39,7 +39,7 @@ export const NavigationHeader: React.FC<NavigationHeaderProps> = ({ onOpenVIP })
               ENOUGH
             </span>
             <span className="text-[9px] uppercase tracking-[0.25em] text-[#8B1A1A] -mt-1 font-body">
-              Genesis
+              Gênesis
             </span>
           </div>
         </a>
@@ -56,7 +56,7 @@ export const NavigationHeader: React.FC<NavigationHeaderProps> = ({ onOpenVIP })
             href="#genesis"
             className="hover:text-[#8B1A1A] transition-colors py-1"
           >
-            Genesis
+            Gênesis
           </a>
           <a
             href="#criacao"

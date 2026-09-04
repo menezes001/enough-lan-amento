@@ -44,7 +44,7 @@ export const BrandFooter: React.FC<BrandFooterProps> = ({ onOpenVIP }) => {
               </li>
               <li>
                 <a href="#genesis" className="hover:text-[#FBF6E5] transition-colors">
-                  Coleção Genesis
+                  Coleção Gênesis
                 </a>
               </li>
               <li>
@@ -85,7 +85,7 @@ export const BrandFooter: React.FC<BrandFooterProps> = ({ onOpenVIP }) => {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-[#FBF6E5]/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#FBF6E5]/40">
-          <p>© {new Date().getFullYear()} ENOUGH. Todos os direitos reservados. Genesis — Coleção 01.</p>
+          <p>© {new Date().getFullYear()} ENOUGH. Todos os direitos reservados. Gênesis — Coleção 01.</p>
           <p className="font-editorial italic text-xs text-[#FBF6E5]/60">
             O essencial permanece.
           </p>

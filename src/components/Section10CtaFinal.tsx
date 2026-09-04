@@ -34,7 +34,7 @@ export const Section10CtaFinal: React.FC<Section10CtaFinalProps> = ({ onOpenVIP 
             ENOUGH
           </span>
           <span className="text-[10px] uppercase tracking-[0.3em] text-[#CA9766] font-body">
-            Coleção Genesis
+            Coleção Gênesis
           </span>
         </motion.div>
 
@@ -89,7 +89,7 @@ export const Section10CtaFinal: React.FC<Section10CtaFinalProps> = ({ onOpenVIP 
           </button>
 
           <p className="font-body text-xs sm:text-sm text-[#FBF6E5]/70 max-w-lg mx-auto leading-relaxed pt-1">
-            Receba acesso antecipado à Coleção Genesis, condições exclusivas e brindes de lançamento.
+            Receba acesso antecipado à Coleção Gênesis, condições exclusivas e brindes de lançamento.
           </p>
         </motion.div>
 

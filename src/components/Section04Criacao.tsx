@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ClassicalArchEngraving, FountainEngraving, GrapevineEngraving } from './BrandEngravings.tsx';
-import womanImg from '../assets/images/genesis_woman_creation_1788375050696.jpg';
+import womanImg from '../assets/images/DSC-5844.jpg';
 
 export const Section04Criacao: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ export const Section04Criacao: React.FC = () => {
               <div className="relative overflow-hidden border border-[#8B1A1A]/20 shadow-xl bg-[#FBF6E5]">
                 <img
                   src={womanImg}
-                  alt="Retrato contemplativo e sereno de mulher adulta com joia sutil"
+                  alt="Fotografia da Coleção Gênesis — A Criação"
                   className="w-full h-auto aspect-[3/4] object-cover transition-transform duration-700 hover:scale-[1.02]"
                   referrerPolicy="no-referrer"
                 />

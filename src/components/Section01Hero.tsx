@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
 import { BrandLogo } from './BrandLogo.tsx';
 import { BrandMonogram } from './BrandMonogram.tsx';
-import heroImg from '../assets/images/genesis_hero_editorial_1788375011758.jpg';
+import heroImg from '../assets/images/DSC-5895.jpg';
 
 interface Section01HeroProps {
   onOpenVIP: () => void;
@@ -35,7 +35,7 @@ export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
                 </span>
                 <span className="text-[#8B1A1A]/40 text-xs">•</span>
                 <span className="text-[10px] uppercase tracking-[0.25em] text-[#8B1A1A] font-semibold font-body">
-                  COLEÇÃO GENESIS
+                  COLEÇÃO GÊNESIS
                 </span>
               </div>
             </div>
@@ -47,7 +47,7 @@ export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
 
             {/* Subtitle */}
             <p className="font-editorial text-xl sm:text-2xl md:text-3xl text-[#1A1A1A]/85 font-normal leading-snug max-w-xl">
-              Genesis é um convite para lembrar aquilo que sempre esteve em você.
+              Gênesis é um convite para lembrar aquilo que sempre esteve em você.
             </p>
 
             {/* Complementary Manifesto Line */}
@@ -86,7 +86,7 @@ export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
               <div className="relative overflow-hidden shadow-2xl border border-[#8B1A1A]/15 bg-[#FBF6E5]">
                 <img
                   src={heroImg}
-                  alt="Mulher elegante usando joia da Coleção Genesis da ENOUGH"
+                  alt="Mulher elegante usando joia da Coleção Gênesis da ENOUGH"
                   className="w-full h-auto aspect-[3/4] object-cover filter contrast-[1.02] brightness-[0.99] transition-transform duration-700 hover:scale-[1.01]"
                   referrerPolicy="no-referrer"
                   loading="eager"
@@ -99,7 +99,7 @@ export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
                       Registro Editorial
                     </p>
                     <p className="font-editorial text-sm italic">
-                      Genesis — O Lembrete
+                      Gênesis — O Lembrete
                     </p>
                   </div>
                   <BrandMonogram size={24} color="#FBF6E5" />
@@ -126,7 +126,7 @@ export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
           href="#manifesto"
           className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-[#8B1A1A] hover:text-[#5C1010] transition-colors font-body font-medium"
         >
-          <span>Conheça Genesis</span>
+          <span>Conheça Gênesis</span>
           <ArrowDown className="w-3.5 h-3.5 animate-bounce" />
         </a>
       </motion.div>

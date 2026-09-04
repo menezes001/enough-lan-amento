@@ -18,7 +18,7 @@ export const Section06Preview: React.FC = () => {
             Design que carrega significado.
           </h2>
           <p className="font-body text-base sm:text-lg text-[#1A1A1A]/70 max-w-xl mx-auto leading-relaxed pt-2">
-            Cada detalhe de Genesis foi pensado para comunicar além do visível.
+            Cada detalhe de Gênesis foi pensado para comunicar além do visível.
           </p>
         </div>
 

@@ -77,13 +77,13 @@ export const WhatsAppModal: React.FC<WhatsAppModalProps> = ({
                 <BrandLogo size={56} rounded="sm" alt="ENOUGH" />
               </div>
               <p className="text-[11px] uppercase tracking-[0.25em] text-[#8B1A1A] font-semibold mb-1">
-                ENOUGH • COLEÇÃO GENESIS
+                ENOUGH • COLEÇÃO GÊNESIS
               </p>
               <h3 className="font-editorial text-2xl sm:text-3xl text-[#1A1A1A] font-normal leading-tight">
                 Grupo VIP de Lançamento
               </h3>
               <p className="text-xs sm:text-sm text-[#1A1A1A]/75 mt-2 font-body max-w-sm mx-auto leading-relaxed">
-                Um espaço silencioso e reservado no WhatsApp para quem deseja vivenciar o princípio de Genesis em primeira mão.
+                Um espaço silencioso e reservado no WhatsApp para quem deseja vivenciar o princípio de Gênesis em primeira mão.
               </p>
             </div>
 
@@ -98,7 +98,7 @@ export const WhatsAppModal: React.FC<WhatsAppModalProps> = ({
                     01 — Acesso antecipado
                   </h4>
                   <p className="text-xs text-[#1A1A1A]/70 mt-0.5">
-                    Conheça a Coleção Genesis antes da abertura oficial ao público.
+                    Conheça a Coleção Gênesis antes da abertura oficial ao público.
                   </p>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { BrandMonogram } from './BrandMonogram.tsx';
-import piecesImg from '../assets/images/genesis_pieces_macro_1788375030047.jpg';
+import piecesImg from '../assets/images/DSC-5916.jpg';
 
 interface Section03GenesisProps {
   onOpenVIP: () => void;
@@ -38,7 +38,7 @@ export const Section03Genesis: React.FC<Section03GenesisProps> = ({ onOpenVIP })
 
             {/* Title */}
             <h2 className="font-editorial text-5xl sm:text-7xl md:text-8xl text-[#FBF6E5] font-normal leading-[1] tracking-tight">
-              Genesis
+              Gênesis
             </h2>
 
             {/* Sub-headline */}
@@ -49,7 +49,7 @@ export const Section03Genesis: React.FC<Section03GenesisProps> = ({ onOpenVIP })
             {/* Narrative text */}
             <div className="space-y-4 font-body text-sm sm:text-base text-[#FBF6E5]/85 leading-relaxed max-w-xl">
               <p>
-                Genesis nasce de uma reflexão sobre origem, criação e identidade.
+                Gênesis nasce de uma reflexão sobre origem, criação e identidade.
               </p>
               <p>
                 Uma coleção que não pretende dizer quem você deveria ser.
@@ -65,7 +65,7 @@ export const Section03Genesis: React.FC<Section03GenesisProps> = ({ onOpenVIP })
                 onClick={onOpenVIP}
                 className="bg-[#FBF6E5] hover:bg-white text-[#8B1A1A] py-3.5 px-8 font-body font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
               >
-                Quero conhecer Genesis primeiro
+                Quero conhecer Gênesis primeiro
               </button>
             </div>
           </motion.div>
@@ -82,14 +82,14 @@ export const Section03Genesis: React.FC<Section03GenesisProps> = ({ onOpenVIP })
               <div className="relative overflow-hidden">
                 <img
                   src={piecesImg}
-                  alt="Fotografia parcial das peças da Coleção Genesis"
-                  className="w-full h-auto aspect-[4/3] object-cover transition-transform duration-700 hover:scale-105"
+                  alt="Fotografia da Coleção Gênesis"
+                  className="w-full h-auto aspect-[4/5] object-cover transition-transform duration-700 hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
               </div>
               <div className="pt-3 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-[#FBF6E5]/70 font-body">
                 <span>Vislumbre Parcial</span>
-                <span>Genesis • 01</span>
+                <span>Gênesis • 01</span>
               </div>
             </div>
           </motion.div>

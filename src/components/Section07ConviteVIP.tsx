@@ -47,7 +47,7 @@ export const Section07ConviteVIP: React.FC<Section07ConviteVIPProps> = ({ onOpen
           className="max-w-2xl mx-auto font-body text-base sm:text-lg text-[#FBF6E5]/85 leading-relaxed space-y-3"
         >
           <p>
-            Criamos um espaço reservado para quem deseja acompanhar Genesis mais de perto.
+            Criamos um espaço reservado para quem deseja acompanhar Gênesis mais de perto.
           </p>
           <p>
             No grupo VIP da ENOUGH, você terá acesso antecipado ao lançamento e benefícios preparados especialmente para este momento.
@@ -74,7 +74,7 @@ export const Section07ConviteVIP: React.FC<Section07ConviteVIPProps> = ({ onOpen
               Acesso antecipado
             </h3>
             <p className="font-body text-xs sm:text-sm text-[#FBF6E5]/75 leading-relaxed">
-              Conheça Genesis antes da abertura oficial.
+              Conheça Gênesis antes da abertura oficial.
             </p>
           </div>
 

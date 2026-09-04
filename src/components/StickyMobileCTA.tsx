@@ -44,7 +44,7 @@ export const StickyMobileCTA: React.FC<StickyMobileCTAProps> = ({ onOpenVIP }) =
                   COLEÇÃO
                 </span>
                 <span className="font-editorial text-sm font-semibold text-[#1A1A1A]">
-                  Genesis
+                  Gênesis
                 </span>
               </div>
               <p className="text-[11px] text-[#1A1A1A]/70 truncate font-body">
