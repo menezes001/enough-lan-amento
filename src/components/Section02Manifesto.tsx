@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { GrapevineEngraving, SwallowEngraving } from './BrandEngravings.tsx';
 
 export const Section02Manifesto: React.FC = () => {
   return (
@@ -9,11 +8,9 @@ export const Section02Manifesto: React.FC = () => {
       className="relative bg-[#FBF6E5] text-[#1A1A1A] py-24 sm:py-36 px-6 sm:px-12 overflow-hidden border-t border-[#8B1A1A]/10"
     >
       <div className="max-w-4xl mx-auto relative z-10">
-        {/* Subtle decorative engraving watermark */}
-        <div className="flex justify-between items-center mb-10 opacity-70">
-          <div className="w-12 h-px bg-[#8B1A1A]/30" />
-          <SwallowEngraving className="w-12 h-12 text-[#8B1A1A]" color="#8B1A1A" />
-          <div className="w-12 h-px bg-[#8B1A1A]/30" />
+        {/* Subtle decorative divider */}
+        <div className="flex justify-center mb-10">
+          <div className="w-16 h-px bg-[#8B1A1A]/30" />
         </div>
 
         {/* Section Identifier */}
@@ -75,11 +72,6 @@ export const Section02Manifesto: React.FC = () => {
             “A origem permanece.”
           </blockquote>
         </motion.div>
-
-        {/* Bottom Engraving detail */}
-        <div className="mt-16 flex justify-center opacity-60">
-          <GrapevineEngraving className="w-16 h-16 text-[#8B1A1A]" color="#8B1A1A" />
-        </div>
       </div>
     </section>
   );

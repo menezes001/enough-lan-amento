@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
 import { BrandLogo } from './BrandLogo.tsx';
-import { BrandMonogram } from './BrandMonogram.tsx';
 import heroImg from '../assets/images/DSC-5895.jpg';
 
 interface Section01HeroProps {
@@ -93,7 +92,7 @@ export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
                 />
 
                 {/* Delicate caption watermark */}
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#1A1A1A]/50 via-transparent to-transparent p-5 text-[#FBF6E5] flex justify-between items-end">
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#1A1A1A]/50 via-transparent to-transparent p-5 text-[#FBF6E5]">
                   <div>
                     <p className="text-[9px] uppercase tracking-[0.25em] text-[#FBF6E5]/80 font-body">
                       Registro Editorial
@@ -102,7 +101,6 @@ export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
                       Gênesis — O Lembrete
                     </p>
                   </div>
-                  <BrandMonogram size={24} color="#FBF6E5" />
                 </div>
               </div>
 

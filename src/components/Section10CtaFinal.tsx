@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
-import { BrandMonogram } from './BrandMonogram.tsx';
 import { BrandLogo } from './BrandLogo.tsx';
 
 interface Section10CtaFinalProps {
@@ -11,11 +10,6 @@ interface Section10CtaFinalProps {
 export const Section10CtaFinal: React.FC<Section10CtaFinalProps> = ({ onOpenVIP }) => {
   return (
     <section className="relative bg-[#1A1A1A] text-[#FBF6E5] py-28 sm:py-44 px-6 sm:px-12 text-center overflow-hidden">
-      {/* Subtle monogram watermark in deep dark backdrop */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-[0.04] select-none">
-        <BrandMonogram size={800} color="#FBF6E5" />
-      </div>
-
       <div className="max-w-3xl mx-auto relative z-10 space-y-9">
         
         {/* Logo in Cream */}

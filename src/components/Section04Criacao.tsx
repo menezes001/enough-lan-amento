@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ClassicalArchEngraving, FountainEngraving, GrapevineEngraving } from './BrandEngravings.tsx';
 import womanImg from '../assets/images/DSC-5844.jpg';
 
 export const Section04Criacao: React.FC = () => {
@@ -12,7 +11,7 @@ export const Section04Criacao: React.FC = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Left Column: Portrait & Classical Engraving Accent */}
+          {/* Left Column: Portrait */}
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -21,7 +20,7 @@ export const Section04Criacao: React.FC = () => {
             className="lg:col-span-6 relative order-2 lg:order-1"
           >
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Photo Container with Arch frame motif */}
+              {/* Photo Container */}
               <div className="relative overflow-hidden border border-[#8B1A1A]/20 shadow-xl bg-[#FBF6E5]">
                 <img
                   src={womanImg}
@@ -29,14 +28,6 @@ export const Section04Criacao: React.FC = () => {
                   className="w-full h-auto aspect-[3/4] object-cover transition-transform duration-700 hover:scale-[1.02]"
                   referrerPolicy="no-referrer"
                 />
-              </div>
-
-              {/* Floating Architectural / Botanical engraving elements */}
-              <div className="absolute -top-8 -left-8 hidden sm:block pointer-events-none opacity-40">
-                <ClassicalArchEngraving className="w-20 h-28 text-[#8B1A1A]" color="#8B1A1A" />
-              </div>
-              <div className="absolute -bottom-6 -right-6 hidden sm:block pointer-events-none opacity-40">
-                <FountainEngraving className="w-24 h-24 text-[#8B1A1A]" color="#8B1A1A" />
               </div>
             </div>
           </motion.div>
@@ -80,11 +71,6 @@ export const Section04Criacao: React.FC = () => {
               <blockquote className="font-editorial text-2xl sm:text-3xl text-[#8B1A1A] font-normal italic leading-snug">
                 “A criação carrega a intenção do Criador.”
               </blockquote>
-            </div>
-
-            {/* Subtle botanical line */}
-            <div className="pt-2">
-              <GrapevineEngraving className="w-14 h-14 opacity-50" color="#8B1A1A" />
             </div>
           </motion.div>
 

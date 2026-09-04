@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { BrandMonogram } from './BrandMonogram.tsx';
 import piecesImg from '../assets/images/DSC-5916.jpg';
 
 interface Section03GenesisProps {
@@ -13,11 +12,6 @@ export const Section03Genesis: React.FC<Section03GenesisProps> = ({ onOpenVIP })
       id="genesis"
       className="relative bg-[#8B1A1A] text-[#FBF6E5] py-24 sm:py-36 px-6 sm:px-12 overflow-hidden"
     >
-      {/* Large watermark ENOUGH monogram at low opacity */}
-      <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 pointer-events-none opacity-[0.06] select-none">
-        <BrandMonogram size={720} color="#FBF6E5" />
-      </div>
-
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           

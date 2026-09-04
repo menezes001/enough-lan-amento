@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { BrandMonogram } from './BrandMonogram.tsx';
 
 export const Section05Conceito: React.FC = () => {
   return (
@@ -9,13 +8,6 @@ export const Section05Conceito: React.FC = () => {
       className="relative bg-[#FBF6E5] text-[#1A1A1A] py-32 sm:py-48 px-6 sm:px-12 overflow-hidden border-t border-[#8B1A1A]/10"
     >
       <div className="max-w-5xl mx-auto text-center relative z-10 space-y-12">
-        {/* Subtle center emblem */}
-        <div className="flex justify-center">
-          <div className="w-10 h-10 rounded-full bg-[#8B1A1A]/5 flex items-center justify-center text-[#8B1A1A]">
-            <BrandMonogram size={22} color="#8B1A1A" />
-          </div>
-        </div>
-
         {/* Concept Tag */}
         <div>
           <span className="text-[10px] uppercase tracking-[0.35em] font-semibold text-[#8B1A1A] font-body">
