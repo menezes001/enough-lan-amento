@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import ringHandsImg from '../assets/images/genesis_ring_hands_1788375084460.jpg';
-import piecesMacroImg from '../assets/images/genesis_pieces_macro_1788375030047.jpg';
-import womanImg from '../assets/images/genesis_woman_creation_1788375050696.jpg';
+import ringHandsImg from '../assets/images/preview_ring_hands.png';
+import piecesMacroImg from '../assets/images/preview_piece_detail.png';
 
 export const Section06Preview: React.FC = () => {
   return (
@@ -31,20 +30,16 @@ export const Section06Preview: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="md:col-span-5 space-y-3"
+            className="md:col-span-5"
           >
             <div className="relative overflow-hidden border border-[#8B1A1A]/15 bg-[#FBF6E5] shadow-lg group">
               <img
                 src={ringHandsImg}
-                alt="Close editorial de anel minimalista nas mãos com luz suave natural"
+                alt="Semijoias da Coleção Gênesis em composição editorial"
                 className="w-full h-auto aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-[#8B1A1A]/0 group-hover:bg-[#8B1A1A]/10 transition-colors duration-500" />
-            </div>
-            <div className="flex items-center justify-between text-[11px] font-body text-[#1A1A1A]/70 px-1">
-              <span className="font-editorial italic text-[#8B1A1A] text-sm">O Toque e a Matéria</span>
-              <span className="tracking-[0.15em] uppercase text-[10px]">Gênesis • Anel</span>
             </div>
           </motion.div>
 
@@ -54,20 +49,16 @@ export const Section06Preview: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="md:col-span-7 space-y-3 md:pt-12"
+            className="md:col-span-7 md:pt-12"
           >
             <div className="relative overflow-hidden border border-[#8B1A1A]/15 bg-[#FBF6E5] shadow-lg group">
               <img
                 src={piecesMacroImg}
-                alt="Macro do metal e joias repousando sobre pedra e linho cru"
+                alt="Detalhe das semijoias da Coleção Gênesis"
                 className="w-full h-auto aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-[#8B1A1A]/0 group-hover:bg-[#8B1A1A]/10 transition-colors duration-500" />
-            </div>
-            <div className="flex items-center justify-between text-[11px] font-body text-[#1A1A1A]/70 px-1">
-              <span className="font-editorial italic text-[#8B1A1A] text-sm">Luz Natural & Sombras Vivas</span>
-              <span className="tracking-[0.15em] uppercase text-[10px]">Origem • Elementos</span>
             </div>
           </motion.div>
 

@@ -10,7 +10,7 @@ interface Section01HeroProps {
 
 export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
   return (
-    <section className="relative min-h-[92vh] sm:min-h-screen bg-[#FBF6E5] text-[#1A1A1A] pt-28 pb-16 sm:pb-24 px-6 sm:px-12 flex flex-col justify-between overflow-hidden">
+    <section className="relative min-h-[92vh] sm:min-h-screen bg-[#FBF6E5] text-[#1A1A1A] pt-12 sm:pt-16 pb-16 sm:pb-24 px-6 sm:px-12 flex flex-col justify-between overflow-hidden">
       {/* Background subtle grain */}
       <div className="absolute inset-0 bg-subtle-grain pointer-events-none opacity-60" />
 

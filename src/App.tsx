@@ -3,8 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
-import NavigationHeader from './components/NavigationHeader.tsx';
+import React, { useState } from 'react';
 import Section01Hero from './components/Section01Hero.tsx';
 import Section02Manifesto from './components/Section02Manifesto.tsx';
 import Section03Genesis from './components/Section03Genesis.tsx';
@@ -40,9 +39,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#FBF6E5] text-[#1A1A1A] font-body selection:bg-[#8B1A1A] selection:text-[#FBF6E5] relative">
-      {/* Navigation Header */}
-      <NavigationHeader onOpenVIP={handleOpenVIP} />
-
       {/* Main Sections */}
       <main>
         {/* SEÇÃO 01 — HERO */}
