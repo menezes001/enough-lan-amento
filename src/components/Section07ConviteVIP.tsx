@@ -84,7 +84,7 @@ export const Section07ConviteVIP: React.FC<Section07ConviteVIPProps> = ({ onOpen
               Condições exclusivas
             </h3>
             <p className="font-body text-xs sm:text-sm text-[#FBF6E5]/75 leading-relaxed">
-              Benefícios e descontos reservados às participantes do grupo.
+              Vantagens especiais reservadas às participantes do grupo.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export const Section07ConviteVIP: React.FC<Section07ConviteVIPProps> = ({ onOpen
               <Gift className="w-4 h-4 text-[#FBF6E5]/70" />
             </div>
             <h3 className="font-editorial text-2xl text-[#FBF6E5] font-normal">
-              Brindes especiais
+              Presentes especiais
             </h3>
             <p className="font-body text-xs sm:text-sm text-[#FBF6E5]/75 leading-relaxed">
               Surpresas preparadas para celebrar o início da ENOUGH.

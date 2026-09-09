@@ -71,7 +71,7 @@ export const BrandFooter: React.FC<BrandFooterProps> = ({ onOpenVIP }) => {
               Comunidade VIP
             </p>
             <p className="text-[#FBF6E5]/70 text-xs leading-relaxed">
-              Espaço reservado no WhatsApp para acesso antecipado, condições exclusivas e brindes de lançamento.
+              Espaço reservado no WhatsApp para acesso antecipado, condições exclusivas e presentes de lançamento.
             </p>
             <button
               onClick={onOpenVIP}

@@ -68,7 +68,7 @@ export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
                 <span>•</span>
                 <span>condições exclusivas</span>
                 <span>•</span>
-                <span>brindes de lançamento</span>
+                <span>presentes de lançamento</span>
               </p>
             </div>
           </motion.div>

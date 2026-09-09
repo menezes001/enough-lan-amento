@@ -83,7 +83,7 @@ export const Section10CtaFinal: React.FC<Section10CtaFinalProps> = ({ onOpenVIP 
           </button>
 
           <p className="font-body text-xs sm:text-sm text-[#FBF6E5]/70 max-w-lg mx-auto leading-relaxed pt-1">
-            Receba acesso antecipado à Coleção Gênesis, condições exclusivas e brindes de lançamento.
+            Receba acesso antecipado à Coleção Gênesis, condições exclusivas e presentes de lançamento.
           </p>
         </motion.div>
 
