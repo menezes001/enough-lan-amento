@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, ShieldCheck, Gift, MessageCircle } from 'lucide-react';
+import { WHATSAPP_VIP_LINK } from '../constants.ts';
 
 interface Section07ConviteVIPProps {
-  onOpenVIP: () => void;
+  onOpenVIP?: () => void;
+  whatsappLink?: string;
 }
 
-export const Section07ConviteVIP: React.FC<Section07ConviteVIPProps> = ({ onOpenVIP }) => {
+export const Section07ConviteVIP: React.FC<Section07ConviteVIPProps> = ({ onOpenVIP, whatsappLink = WHATSAPP_VIP_LINK }) => {
   return (
     <section
       id="grupo-vip"
@@ -113,13 +115,16 @@ export const Section07ConviteVIP: React.FC<Section07ConviteVIPProps> = ({ onOpen
           transition={{ duration: 0.8, delay: 0.45 }}
           className="pt-8 space-y-3.5"
         >
-          <button
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={onOpenVIP}
             className="inline-flex items-center justify-center gap-3.5 bg-[#FBF6E5] hover:bg-white active:bg-[#FBF6E5]/90 text-[#8B1A1A] py-5 px-8 sm:px-14 font-body font-medium text-xs sm:text-sm tracking-[0.22em] uppercase transition-all duration-300 shadow-2xl hover:shadow-xl cursor-pointer"
           >
             <MessageCircle className="w-4 h-4 text-[#8B1A1A]" />
             <span>Quero entrar no grupo VIP</span>
-          </button>
+          </a>
 
           <p className="text-xs text-[#FBF6E5]/70 font-body tracking-wider">
             Entrada gratuita pelo WhatsApp.

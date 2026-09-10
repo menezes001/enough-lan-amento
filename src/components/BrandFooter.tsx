@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrandLogo } from './BrandLogo.tsx';
+import { WHATSAPP_VIP_LINK } from '../constants.ts';
 
 interface BrandFooterProps {
-  onOpenVIP: () => void;
+  onOpenVIP?: () => void;
+  whatsappLink?: string;
 }
 
-export const BrandFooter: React.FC<BrandFooterProps> = ({ onOpenVIP }) => {
+export const BrandFooter: React.FC<BrandFooterProps> = ({ onOpenVIP, whatsappLink = WHATSAPP_VIP_LINK }) => {
   return (
     <footer className="bg-[#141414] text-[#FBF6E5] border-t border-[#FBF6E5]/10 py-16 sm:py-20 px-6 sm:px-12 font-body text-xs">
       <div className="max-w-7xl mx-auto space-y-12">
@@ -73,12 +75,15 @@ export const BrandFooter: React.FC<BrandFooterProps> = ({ onOpenVIP }) => {
             <p className="text-[#FBF6E5]/70 text-xs leading-relaxed">
               Espaço reservado no WhatsApp para acesso antecipado, condições exclusivas e presentes de lançamento.
             </p>
-            <button
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={onOpenVIP}
               className="inline-block text-[#CA9766] hover:text-[#FBF6E5] transition-colors uppercase tracking-[0.18em] text-[11px] font-semibold border-b border-[#CA9766]/50 pb-0.5"
             >
               Entrar no Grupo VIP →
-            </button>
+            </a>
           </div>
 
         </div>

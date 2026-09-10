@@ -3,12 +3,14 @@ import { motion } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
 import { BrandLogo } from './BrandLogo.tsx';
 import heroImg from '../assets/images/DSC-5895.jpg';
+import { WHATSAPP_VIP_LINK } from '../constants.ts';
 
 interface Section01HeroProps {
-  onOpenVIP: () => void;
+  onOpenVIP?: () => void;
+  whatsappLink?: string;
 }
 
-export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
+export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP, whatsappLink = WHATSAPP_VIP_LINK }) => {
   return (
     <section className="relative min-h-[92vh] sm:min-h-screen bg-[#FBF6E5] text-[#1A1A1A] pt-12 sm:pt-16 pb-16 sm:pb-24 px-6 sm:px-12 flex flex-col justify-between overflow-hidden">
       {/* Background subtle grain */}
@@ -56,12 +58,15 @@ export const Section01Hero: React.FC<Section01HeroProps> = ({ onOpenVIP }) => {
 
             {/* CTA & Microcopy Group */}
             <div className="pt-3 space-y-3.5">
-              <button
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={onOpenVIP}
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-[#8B1A1A] hover:bg-[#721515] active:bg-[#5C1010] text-[#FBF6E5] py-4 px-8 sm:px-10 font-body font-medium text-xs sm:text-sm tracking-[0.2em] uppercase transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer"
               >
                 ENTRAR NO GRUPO VIP
-              </button>
+              </a>
 
               <p className="text-[11px] sm:text-xs text-[#1A1A1A]/65 font-body tracking-wider flex items-center gap-2">
                 <span>Acesso antecipado</span>

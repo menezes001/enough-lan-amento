@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrandLogo } from './BrandLogo.tsx';
+import { WHATSAPP_VIP_LINK } from '../constants.ts';
 
 interface NavigationHeaderProps {
-  onOpenVIP: () => void;
+  onOpenVIP?: () => void;
+  whatsappLink?: string;
 }
 
-export const NavigationHeader: React.FC<NavigationHeaderProps> = ({ onOpenVIP }) => {
+export const NavigationHeader: React.FC<NavigationHeaderProps> = ({ onOpenVIP, whatsappLink = WHATSAPP_VIP_LINK }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -80,12 +82,15 @@ export const NavigationHeader: React.FC<NavigationHeaderProps> = ({ onOpenVIP })
 
         {/* VIP Action */}
         <div className="flex items-center gap-3">
-          <button
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={onOpenVIP}
-            className="bg-[#8B1A1A] hover:bg-[#721515] active:bg-[#5C1010] text-[#FBF6E5] text-[11px] font-body font-medium uppercase tracking-[0.18em] py-2.5 px-4 sm:px-5 transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer"
+            className="bg-[#8B1A1A] hover:bg-[#721515] active:bg-[#5C1010] text-[#FBF6E5] text-[11px] font-body font-medium uppercase tracking-[0.18em] py-2.5 px-4 sm:px-5 transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer inline-block"
           >
             Grupo VIP
-          </button>
+          </a>
         </div>
       </div>
     </header>

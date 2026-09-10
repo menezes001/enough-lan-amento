@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import piecesImg from '../assets/images/DSC-5916.jpg';
+import { WHATSAPP_VIP_LINK } from '../constants.ts';
 
 interface Section03GenesisProps {
-  onOpenVIP: () => void;
+  onOpenVIP?: () => void;
+  whatsappLink?: string;
 }
 
-export const Section03Genesis: React.FC<Section03GenesisProps> = ({ onOpenVIP }) => {
+export const Section03Genesis: React.FC<Section03GenesisProps> = ({ onOpenVIP, whatsappLink = WHATSAPP_VIP_LINK }) => {
   return (
     <section
       id="genesis"
@@ -55,12 +57,15 @@ export const Section03Genesis: React.FC<Section03GenesisProps> = ({ onOpenVIP })
 
             {/* Direct VIP action */}
             <div className="pt-4">
-              <button
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={onOpenVIP}
-                className="bg-[#FBF6E5] hover:bg-white text-[#8B1A1A] py-3.5 px-8 font-body font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
+                className="inline-block bg-[#FBF6E5] hover:bg-white text-[#8B1A1A] py-3.5 px-8 font-body font-medium text-xs tracking-[0.2em] uppercase transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
               >
                 Quero conhecer Gênesis primeiro
-              </button>
+              </a>
             </div>
           </motion.div>
 

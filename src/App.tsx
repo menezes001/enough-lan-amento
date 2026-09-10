@@ -17,11 +17,17 @@ import Section10CtaFinal from './components/Section10CtaFinal.tsx';
 import BrandFooter from './components/BrandFooter.tsx';
 import StickyMobileCTA from './components/StickyMobileCTA.tsx';
 import WhatsAppModal from './components/WhatsAppModal.tsx';
+import { WHATSAPP_VIP_LINK } from './constants.ts';
 
 export default function App() {
   const [isVIPModalOpen, setIsVIPModalOpen] = useState(false);
   const [whatsappLink, setWhatsappLink] = useState<string>(() => {
-    return localStorage.getItem('enough_whatsapp_vip_link') || 'https://chat.whatsapp.com/ENOUGH-Genesis-VIP';
+    const saved = localStorage.getItem('enough_whatsapp_vip_link');
+    if (!saved || saved.includes('ENOUGH-Genesis-VIP')) {
+      localStorage.setItem('enough_whatsapp_vip_link', WHATSAPP_VIP_LINK);
+      return WHATSAPP_VIP_LINK;
+    }
+    return saved;
   });
 
   const handleUpdateWhatsappLink = (newLink: string) => {
@@ -42,13 +48,13 @@ export default function App() {
       {/* Main Sections */}
       <main>
         {/* SEÇÃO 01 — HERO */}
-        <Section01Hero onOpenVIP={handleOpenVIP} />
+        <Section01Hero onOpenVIP={handleOpenVIP} whatsappLink={whatsappLink} />
 
         {/* SEÇÃO 02 — MANIFESTO */}
         <Section02Manifesto />
 
         {/* SEÇÃO 03 — GENESIS */}
-        <Section03Genesis onOpenVIP={handleOpenVIP} />
+        <Section03Genesis onOpenVIP={handleOpenVIP} whatsappLink={whatsappLink} />
 
         {/* SEÇÃO 04 — A CRIAÇÃO */}
         <Section04Criacao />
@@ -60,7 +66,7 @@ export default function App() {
         <Section06Preview />
 
         {/* SEÇÃO 07 — CONVITE PARA O GRUPO VIP */}
-        <Section07ConviteVIP onOpenVIP={handleOpenVIP} />
+        <Section07ConviteVIP onOpenVIP={handleOpenVIP} whatsappLink={whatsappLink} />
 
         {/* SEÇÃO 08 — EXPERIÊNCIA ENOUGH */}
         <Section08Experiencia />
@@ -69,14 +75,14 @@ export default function App() {
         <Section09FraseManifesto />
 
         {/* SEÇÃO 10 — CTA FINAL */}
-        <Section10CtaFinal onOpenVIP={handleOpenVIP} />
+        <Section10CtaFinal onOpenVIP={handleOpenVIP} whatsappLink={whatsappLink} />
       </main>
 
       {/* Brand Footer */}
-      <BrandFooter onOpenVIP={handleOpenVIP} />
+      <BrandFooter onOpenVIP={handleOpenVIP} whatsappLink={whatsappLink} />
 
       {/* SEÇÃO 11 — CTA MOBILE FIXO */}
-      <StickyMobileCTA onOpenVIP={handleOpenVIP} />
+      <StickyMobileCTA onOpenVIP={handleOpenVIP} whatsappLink={whatsappLink} />
 
       {/* WhatsApp VIP Modal / Link Router */}
       <WhatsAppModal

@@ -2,12 +2,14 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { BrandLogo } from './BrandLogo.tsx';
+import { WHATSAPP_VIP_LINK } from '../constants.ts';
 
 interface Section10CtaFinalProps {
-  onOpenVIP: () => void;
+  onOpenVIP?: () => void;
+  whatsappLink?: string;
 }
 
-export const Section10CtaFinal: React.FC<Section10CtaFinalProps> = ({ onOpenVIP }) => {
+export const Section10CtaFinal: React.FC<Section10CtaFinalProps> = ({ onOpenVIP, whatsappLink = WHATSAPP_VIP_LINK }) => {
   return (
     <section className="relative bg-[#1A1A1A] text-[#FBF6E5] py-28 sm:py-44 px-6 sm:px-12 text-center overflow-hidden">
       <div className="max-w-3xl mx-auto relative z-10 space-y-9">
@@ -74,13 +76,16 @@ export const Section10CtaFinal: React.FC<Section10CtaFinalProps> = ({ onOpenVIP 
           transition={{ duration: 0.8, delay: 0.4 }}
           className="pt-4 space-y-4"
         >
-          <button
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={onOpenVIP}
             className="inline-flex items-center justify-center gap-3 bg-[#8B1A1A] hover:bg-[#a32222] active:bg-[#701515] text-[#FBF6E5] py-5 px-10 sm:px-14 font-body font-medium text-xs sm:text-sm tracking-[0.22em] uppercase transition-all duration-300 shadow-xl hover:shadow-2xl cursor-pointer"
           >
             <span>Entrar no Grupo VIP</span>
             <ArrowRight className="w-4 h-4" />
-          </button>
+          </a>
 
           <p className="font-body text-xs sm:text-sm text-[#FBF6E5]/70 max-w-lg mx-auto leading-relaxed pt-1">
             Receba acesso antecipado à Coleção Gênesis, condições exclusivas e presentes de lançamento.

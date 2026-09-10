@@ -112,7 +112,7 @@ export const WhatsAppModal: React.FC<WhatsAppModalProps> = ({
                     02 — Condições exclusivas
                   </h4>
                   <p className="text-xs text-[#1A1A1A]/70 mt-0.5">
-                    Valores e condições especiais reservados às participantes do grupo.
+                    Vantagens especiais reservadas às participantes do grupo.
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export const WhatsAppModal: React.FC<WhatsAppModalProps> = ({
                 </div>
                 <div>
                   <h4 className="text-xs font-semibold tracking-wide uppercase text-[#1A1A1A]">
-                    03 — Brindes especiais
+                    03 — Presentes especiais
                   </h4>
                   <p className="text-xs text-[#1A1A1A]/70 mt-0.5">
                     Surpresas preparadas com intenção para celebrar o nascimento da marca.
@@ -134,13 +134,16 @@ export const WhatsAppModal: React.FC<WhatsAppModalProps> = ({
 
             {/* Main Action Button */}
             <div className="space-y-3 text-center">
-              <button
-                onClick={handleOpenWhatsApp}
-                className="w-full bg-[#8B1A1A] hover:bg-[#721515] active:bg-[#5C1010] text-[#FBF6E5] py-4 px-6 font-body font-medium text-xs sm:text-sm tracking-[0.18em] uppercase transition-all duration-300 flex items-center justify-center gap-3 shadow-md hover:shadow-lg"
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onClose}
+                className="w-full bg-[#8B1A1A] hover:bg-[#721515] active:bg-[#5C1010] text-[#FBF6E5] py-4 px-6 font-body font-medium text-xs sm:text-sm tracking-[0.18em] uppercase transition-all duration-300 flex items-center justify-center gap-3 shadow-md hover:shadow-lg cursor-pointer"
               >
                 <span>Entrar no Grupo VIP</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
 
               <p className="text-[11px] text-[#1A1A1A]/60 tracking-wider">
                 Entrada gratuita pelo WhatsApp • Sem spam ou notificações invasivas.

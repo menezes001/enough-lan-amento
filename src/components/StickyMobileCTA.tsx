@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowUpRight } from 'lucide-react';
 import { BrandLogo } from './BrandLogo.tsx';
+import { WHATSAPP_VIP_LINK } from '../constants.ts';
 
 interface StickyMobileCTAProps {
-  onOpenVIP: () => void;
+  onOpenVIP?: () => void;
+  whatsappLink?: string;
 }
 
-export const StickyMobileCTA: React.FC<StickyMobileCTAProps> = ({ onOpenVIP }) => {
+export const StickyMobileCTA: React.FC<StickyMobileCTAProps> = ({ onOpenVIP, whatsappLink = WHATSAPP_VIP_LINK }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -52,13 +54,16 @@ export const StickyMobileCTA: React.FC<StickyMobileCTAProps> = ({ onOpenVIP }) =
               </p>
             </div>
 
-            <button
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={onOpenVIP}
               className="shrink-0 bg-[#8B1A1A] hover:bg-[#721515] active:bg-[#5C1010] text-[#FBF6E5] text-[11px] font-body font-medium uppercase tracking-[0.14em] py-2.5 px-3.5 flex items-center gap-1.5 transition-colors shadow-sm"
             >
               <span>Entrar no Grupo</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
-            </button>
+            </a>
           </div>
         </motion.div>
       )}
